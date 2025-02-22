@@ -297,139 +297,147 @@
 
         // Dynamic Quiz Content
         const questions =[
-        
+    
     {
-        "question": "Which keyword is used to declare a variable in JavaScript?",
-        "options": ["var", "let", "const", "All of the above"],
-        "correct": 3
+        "question": "Which of the following is not a primitive data type in JavaScript?",
+        "options": ["String", "Boolean", "Object", "Number"],
+        "correct": 2
     },
     {
-        "question": "Which operator is used for strict equality comparison in JavaScript?",
+        "question": "Which operator is used to compare both value and type in JavaScript?",
         "options": ["==", "===", "!=", "!=="],
         "correct": 1
     },
     {
-        "question": "Which method is used to select an element by its ID in JavaScript?",
-        "options": ["getElementById('')", "querySelector()", "getElementsByClassName()", "getElementByTag()"],
+        "question": "Which function is used to parse a string into an integer?",
+        "options": ["parseInt()", "parseFloat()", "Number()", "toFixed()"],
         "correct": 0
     },
     {
-        "question": "Which of the following is NOT a valid JavaScript variable name?",
-        "options": ["_name", "123name", "$variable", "name123"],
-        "correct": 1
-    },
-    {
-        "question": "Which event is triggered when a user clicks on an element?",
-        "options": ["mouseover", "click", "keydown", "submit"],
-        "correct": 1
-    },
-    {
-        "question": "What will `console.log(5 + '11');` output?",
-        "options": ["511", "16", "Error", "NaN"],
+        "question": "How do you define a function in JavaScript?",
+        "options": ["function myFunc()", "def myFunc()", "fun myFunc()", "lambda myFunc()"],
         "correct": 0
     },
     {
-        "question": "Which loop executes at least once, even if the condition is false?",
+        "question": "What will 'typeof null' return?",
+        "options": ["null", "object", "undefined", "string"],
+        "correct": 1
+    },
+    
+    {
+        "question": "Which loop executes at least once even if the condition is false?",
         "options": ["for", "while", "do...while", "foreach"],
         "correct": 2
     },
     {
-        "question": "Which function is used to execute code after a certain delay?",
-        "options": ["setInterval()", "setTimeout()", "delay()", "wait()"],
-        "correct": 1
-    },
-    {
-        "question": "Which operator is used to check if two values are NOT equal in JavaScript?",
-        "options": ["!=", "!==", "not", "<>"],
-        "correct": 0
-    },
-    {
-        "question": "Which keyword is used to define a constant variable in JavaScript?",
-        "options": ["var", "let", "const", "define"],
-        "correct": 2
-    },
-    {
-        "question": "What does the `this` keyword refer to inside a function by default?",
-        "options": ["Window object", "Current function", "Parent object", "Undefined"],
-        "correct": 0
-    },
-    {
-        "question": "Which method is used to convert a string into an integer in JavaScript?",
-        "options": ["parseInt()", "Number()", "parseFloat()", "toInt()"],
-        "correct": 0
-    },
-    {
-        "question": "Which function is used to add an event listener to an element?",
-        "options": ["onEvent()", "addEventListener()", "setEvent()", "attachEvent()"],
-        "correct": 1
-    },
-    {
-        "question": "Which event occurs when the DOM has fully loaded?",
-        "options": ["load", "DOMContentLoaded", "ready", "onload"],
-        "correct": 1
-    },
-    {
-        "question": "Which event is fired when a key is pressed down?",
-        "options": ["keypress", "keydown", "keyup", "keyinput"],
-        "correct": 1
-    },
-    {
-        "question": "What will `console.log(typeof [])` output?",
-        "options": ["object", "array", "undefined", "list"],
-        "correct": 0
-    },
-    {
-        "question": "Which of the following is NOT a JavaScript data type?",
-        "options": ["Number", "Boolean", "Character", "Object"],
-        "correct": 2
-    },
-    {
-        "question": "How do you write an `if` statement in JavaScript?",
-        "options": ["if condition {}", "if (condition) {}", "if {condition}", "if: condition {}"],
-        "correct": 1
-    },
-    {
-        "question": "Which keyword is used to break out of a loop?",
-        "options": ["break", "stop", "exit", "return"],
-        "correct": 0
-    },
-    {
-        "question": "Which JavaScript statement is used to switch between multiple cases?",
-        "options": ["if-else", "switch", "case", "else-if"],
-        "correct": 1
-    },
-    {
-        "question": "What will `console.log(2 * 3)` output?",
-        "options": ["6", "8", "9", "16"],
-        "correct": 0
-    },
-    {
-        "question": "Which event is triggered when a form is submitted?",
-        "options": ["click", "submit", "change", "input"],
-        "correct": 1
-    },
-    {
-        "question": "What will `console.log([] == false)` return?",
-        "options": ["true", "false", "Error", "undefined"],
-        "correct": 0
-    },
-    {
-        "question": "Which method is used to prevent the default action of an event?",
-        "options": ["stopPropagation()", "preventDefault()", "stopEvent()", "halt()"],
-        "correct": 1
-    },
-    {
-        "question": "Which of the following will correctly execute a function after 3 seconds?",
+        "question": "What does setTimeout do in JavaScript?",
         "options": [
-            "setTimeout(myFunction, 3);",
-            "setTimeout(myFunction, 3000);",
-            "setInterval(myFunction, 3000);",
-            "delay(myFunction, 3);"
+            "Executes a function immediately",
+            "Executes a function after a specified delay",
+            "Repeats a function continuously",
+            "Pauses script execution"
         ],
         "correct": 1
     },
-
+    {
+        "question": "Which statement is used for multiple conditions in JavaScript?",
+        "options": ["if", "switch", "for", "while"],
+        "correct": 1
+    },
+    {
+        "question": "Which event is triggered when an element is clicked?",
+        "options": ["keypress", "mouseover", "click", "keydown"],
+        "correct": 2
+    },
+    {
+        "question": "Which event occurs when a key is pressed?",
+        "options": ["keydown", "keyup", "keypress", "All of the above"],
+        "correct": 3
+    },
+    {
+        "question": "Which event fires when a form is submitted?",
+        "options": ["click", "submit", "change", "keydown"],
+        "correct": 1
+    },
+    {
+        "question": "Which event fires when the DOM is fully loaded?",
+        "options": ["DOMContentLoaded", "load", "beforeunload", "change"],
+        "correct": 0
+    },
+    {
+        "question": "What does 'this' refer to in a regular function?",
+        "options": ["The window object", "The function itself", "The parent object", "The global object"],
+        "correct": 0
+    },
+    {
+        "question": "What does the event parameter provide?",
+        "options": ["The event type", "The event target", "Event-specific properties", "All of the above"],
+        "correct": 3
+    },
+    
+    {
+        "question": "Which operator is used for string concatenation?",
+        "options": ["+", "-", "*", "/"],
+        "correct": 0
+    },
+    {
+        "question": "Which event fires when the user moves the mouse over an element?",
+        "options": ["mouseover", "mouseenter", "mousemove", "mouseout"],
+        "correct": 0
+    },
+    {
+        "question": "Which keyword is used to define a constant variable?",
+        "options": ["let", "var", "const", "final"],
+        "correct": 2
+    },
+    {
+        "question": "Which function is used to delay execution of a function?",
+        "options": ["setTimeout()", "setInterval()", "clearTimeout()", "delay()"],
+        "correct": 0
+    },
+    {
+        "question": "Which event listener method is used to attach an event to an element?",
+        "options": ["attachEvent()", "addEventListener()", "bindEvent()", "setEvent()"],
+        "correct": 1
+    },
+    
+    {
+        "question": "What is the default return value of a function that does not return anything?",
+        "options": ["null", "undefined", "0", "false"],
+        "correct": 1
+    },
+    {
+        "question": "How do you execute a function after every specific time?",
+        "options": ["setTimeout()", "setInterval()", "clearInterval()", "loop()"],
+        "correct": 0
+    },
+    {
+        "question": "Which event fires when a key is released?",
+        "options": ["keydown", "keyup", "keypress", "change"],
+        "correct": 1
+    },
+    {
+        "question": "What will be the output of '2' + 2 in JavaScript?",
+        "options": ["4", "22", "NaN", "Error"],
+        "correct": 1
+    },
+    {
+        "question": "What is the use of the 'break' statement in loops?",
+        "options": [
+            "Stops the loop immediately",
+            "Skips the current iteration",
+            "Continues the loop",
+            "Restarts the loop"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "Which JavaScript method is used to select an element by ID?",
+        "options": ["getElementByClass()", "querySelector()", "getElementById()", "getElementsByTag()"],
+        "correct": 2
+    },
 ]
+
 
 ;
 
